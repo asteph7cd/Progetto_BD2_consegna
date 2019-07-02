@@ -56,7 +56,7 @@ else:
 	ix = open_dir(sys.argv[1])
 
 #--- allocazione del writer ---#
-writer = ix.writer(limitmb=1024,procs=1,multisegment=True)
+writer = ix.writer(limitmb=256,procs=4,multisegment=True)
 
 #--- scansione dei file dei documenti ---#
 #leggi file xml

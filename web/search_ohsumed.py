@@ -45,7 +45,7 @@ def suggerimenti(ix,query):
     corrector = ix.searcher().corrector("abstract")
     for x in qt_correction:
         scores = []
-        for y in corrector.suggest(x, prefix=2, maxdist=5, limit=10):
+        for y in corrector.suggest(x,prefix = 1, maxdist=4, limit=10):
             qt_correction[x].append(y)
     return qt_correction
 
