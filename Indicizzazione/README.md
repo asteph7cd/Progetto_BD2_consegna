@@ -18,3 +18,6 @@ Per fare gli esperimenti sono stati utilizzati i comandi:
 	python indicizzatore_batch_stopwords.py ../indice_stop3 ./ohsumed.87.xml ./stopWords_clinico_3.json
 ```
 Gli ultimi argomenti dei comandi corrispondono ai file contenenti le stopword  utilizzate di volta in volta.
+
+### Nota:
+Per velocizzare il processo di indicizzazione si può usare il calcolo parallelo cambiando i parametri di ```ix.writer()``` nei programmi di indicizzazione.

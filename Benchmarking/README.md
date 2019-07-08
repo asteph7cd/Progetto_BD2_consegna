@@ -28,3 +28,11 @@ Infine per effettuare i test di Wilcoxon sulle coppie di risultati si usa il pro
 ```
 Da notare che questi test hanno ipotesi alternativa bilaterale, in quanto la funzione utilizzata, contenuta nel modulo scipy(1.2.2), non supporta alternativa unilaterale.
 Per avere quindi l'ipotesi alternativa unilaterale è necessario utilizzare una versione di python successiva alla 3.5 e rimuovere dei commenti dal programma.
+
+### Nota:
+Può essere necessario eseguire i comandi per far funzionare ```get_maps.sh``` e ```trec.sh```.
+
+```bash
+    chmod +x get_maps.sh
+    chmod +x trec.sh
+```

@@ -42,35 +42,10 @@ def expq_cor(ix,query):
     if "hiv" in no_check:  
         no_check += ["aids"]
     '''
+    # Per migliorare ancora un po':
     if "gi" in no_check: 
         no_check += ["gastrointestinal"]  
-      
-    BASELINE_1C
-	MAP complessivo: 0.2130
-	BASELINE_2C
-	MAP complessivo: 0.2746
-	BASELINE_3C
-	MAP complessivo: 0.2156
-	STOP1_1C
-	MAP complessivo: 0.2137
-	STOP1_2C
-	MAP complessivo: 0.2748
-	STOP1_3C
-	MAP complessivo: 0.2152
-	STOP2_1C
-	MAP complessivo: 0.2156
-	STOP2_2C
-	MAP complessivo: 0.2839
-	STOP2_3C
-	MAP complessivo: 0.2167
-	STOP3_1C
-	MAP complessivo: 0.2720
-	STOP3_2C
-	MAP complessivo: 0.3510
-	STOP3_3C
-	MAP complessivo: 0.2813
-    
-    '''    
+    '''
     corrector = ix.searcher().corrector("title")
     expq=[]
     for x in check:                                                         # Per ogni parola in check
@@ -199,7 +174,7 @@ def src(indexdir,quer,dsc=True,flds="2",lim=100,w="bm",opt=[],lo="o",resdir="",r
     # Apre il file dove inserire i risultati se esiste
     if resdir and os.path.exists(resdir):
         resfile = open(resdir+"/"+run+"_"+flds+"C"+".treceval",'w')  # Se si cambiano piu' parametri e' consigliato usare la variabile tag al posto di run+"_"+flds+"C" per non rischiare di sovrascrivere risultati
-        print "File dei risultati "+flds+"C"+".treceval"
+        print "File dei risultati "+run+"_"+flds+"C"+".treceval"
     else:
         print resdir,"does not exist"
         resdir=None
