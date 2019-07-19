@@ -16,7 +16,7 @@ Usare [git](https://git-scm.com/downloads) per clonare il progetto, nella cartel
 Programmi contenuti nelle sottocartelle sono scritti principalmente in python, in particolare, è stata utilizzata la versione 2.7.
 Inoltre, sono stati utilizzati vari moduli: Whoosh (2.7.4), paginate-whoosh (0.3), web.py (0.39), scipy (1.2.2).
 
-Per installare questi moduli basta utilizzare il coando:
+Per installare questi moduli basta utilizzare il comando:
 ```bash
     pip install whoosh paginate-whoosh web.py scipy
 ```
